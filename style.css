@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,8 +53,7 @@ body {
 .app-card img {
   width: 115px;
   margin-bottom: 18px;
-  filter:
-    drop-shadow(0 0 22px rgba(0,140,255,0.9));
+  filter: drop-shadow(0 0 22px rgba(0,140,255,0.9));
 }
 
 .app-card h2 {
@@ -136,6 +136,33 @@ body {
     0 0 30px rgba(0,140,255,0.9);
 }
 
+/* ================= OPERATION HOURS ================= */
+.hours {
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle, rgba(0,140,255,0.15), transparent);
+  border-top: 1px solid rgba(255,0,0,0.25);
+  border-bottom: 1px solid rgba(0,140,255,0.25);
+}
+
+.hours h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #ff0033, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hours p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c7d3ff;
+  letter-spacing: 0.6px;
+  text-shadow:
+    0 0 12px rgba(0,140,255,0.8),
+    0 0 10px rgba(255,0,0,0.6);
+}
+
 /* ================= HELP ================= */
 .help {
   text-align: center;
@@ -211,12 +238,7 @@ footer {
 
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
-  .banner {
-    height: 300px;
-  }
-
   .banner img {
     max-height: 220px;
   }
 }
-
